@@ -2,8 +2,19 @@ const mineflayer = require('mineflayer')
 const readline = require('readline')
 const { pathfinder, Movements, goals } = require('mineflayer-pathfinder')
 const { Vec3 } = require('vec3')
- 
-             let bot, afkInterval, attackInterval, hanhDongInterval, antiAternosInterval
+
+// CẤU HÌNH LIÊN KẾT MẠNG TỐI ƯU CHO SERVER CRACK ATERNOS
+const config = {
+  host: 'MoonSMP151.aternos.me',
+    port: 61430,
+      username: 'Moonthichchoigay',
+        version: '1.20.1',
+          checkTimeoutInterval: 120 * 1000,
+            keepAlive: true,
+              viewDistance: 'tiny'
+              }
+
+              let bot, afkInterval, attackInterval, hanhDongInterval, antiAternosInterval
               let dangChuDongStop = false, dangAutoAttack = false, dangPhaBlock = false, dangAn = false
               let dangDaoGo = false, dangDiDao = false, dangDiChuyenDenBlock = false, dangTimRuong = false
               let dangAutoQuang = false, dangBoChay = false
