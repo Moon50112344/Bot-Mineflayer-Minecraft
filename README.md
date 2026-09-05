@@ -181,7 +181,7 @@ Kiểm tra:
 - <table align="center">
   <tr>
     <td>
-      <a href="YOUR_TIKTOK_LINK">
+      <a href="https://www.tiktok.com/@moon501_vn">
         <img src="https://cdn.simpleicons.org/tiktok" width="40" alt="TikTok">
       </a>
     </td>
