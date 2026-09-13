@@ -2,7 +2,7 @@
 
 A Minecraft bot built with Node.js and Mineflayer that can run on Android using Termux.
 
-> Vietnamese users: If you are Vietnamese, please read the Vietnamese version here: [README-vietnamese.md](README-vietnamese.md)
+> Dành cho người dùng Việt Nam: Nếu bạn là người Việt Nam, vui lòng đọc phiên bản tiếng Việt tại đây: [README-vietnamese.md](README-vietnamese.md) 
 
 ## Requirements
 - Android
