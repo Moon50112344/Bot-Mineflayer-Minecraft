@@ -1,116 +1,118 @@
 # Mineflayer Minecraft Bot
 
-Bot Minecraft sử dụng Node.js và Mineflayer, có thể chạy trên Android bằng Termux.
+A Minecraft bot built with Node.js and Mineflayer that can run on Android using Termux.
 
-## Yêu cầu
+> Vietnamese users: If you are Vietnamese, please read the Vietnamese version here: [README-vietnamese.md](README-vietnamese.md)
+
+## Requirements
 - Android
 - Termux
 - Internet
 - Node.js
-- Minecraft Server mà bạn được phép cho bot tham gia
+- A Minecraft Server that you are authorized to let the bot join
 
-## Cài Termux
-Bạn có thể cài Termux từ:
+## Installing Termux
+You can install Termux from:
 - [F-Droid](https://f-droid.org/packages/com.termux/)
-- [Google Play](https://play.google.com/store/apps/details?id=com.termux)
+- [Google Play](https://play.google.com/store/apps/details?id=com.termux/)
 
-## Bước 1 — Cập nhật Termux
-Mở Termux và chạy:
+## Step 1 — Update Termux
+Open Termux and run:
 
 `pkg update && pkg upgrade`
 
-Nếu hỏi `Do you want to continue? [Y/n]`, nhập `Y` rồi nhấn Enter.
+If asked `Do you want to continue? [Y/n]`, enter `Y` and press Enter.
 
-## Bước 2 — Cài Node.js
-Chạy:
+## Step 2 — Install Node.js
+Run:
 
 `pkg install nodejs`
 
-Kiểm tra:
+Check the installation:
 
 `node -v`
 
 `npm -v`
 
-## Bước 3 — Cài curl
-Chạy:
+## Step 3 — Install curl
+Run:
 
 `pkg install curl`
 
-## Bước 4 — Tạo thư mục bot
-Chạy:
+## Step 4 — Create the bot directory
+Run:
 
 `mkdir minecraft-bot`
 
-Sau đó:
+Then:
 
 `cd minecraft-bot`
 
-## Bước 5 — Tải bot từ GitHub
-Chạy:
+## Step 5 — Download the bot from GitHub
+Run:
 
 `curl -L https://raw.githubusercontent.com/Moon50112344/Bot-Mineflayer-Minecraft/refs/heads/main/index.js -o index.js`
 
-Kiểm tra:
+Check the files:
 
 `ls`
 
-Nếu thấy `index.js` thì đã tải thành công.
+If you see `index.js`, the download was successful.
 
-## Bước 6 — Setup Node.js
-Chạy:
+## Step 6 — Set up Node.js
+Run:
 
 `npm init -y`
 
-## Bước 7 — Cài thư viện
-Chạy:
+## Step 7 — Install dependencies
+Run:
 
 `npm install mineflayer mineflayer-pathfinder vec3 minecraft-data`
 
-## Bước 8 — Cấu hình bot
-Mở file:
+## Step 8 — Configure the bot
+Open the file:
 
 `nano index.js`
 
-Tìm phần cấu hình server trong `index.js` và nhập thông tin Minecraft Server của bạn.
+Find the server configuration section in `index.js` and enter your Minecraft Server information.
 
-Sau khi chỉnh sửa:
-- `CTRL + O` để lưu
-- Nhấn `Enter`
-- `CTRL + X` để thoát
+After editing:
+- `CTRL + O` to save
+- Press `Enter`
+- `CTRL + X` to exit
 
-## Bước 9 — Chạy bot
-Chạy:
+## Step 9 — Run the bot
+Run:
 
 `node index.js`
 
-Bot sẽ bắt đầu kết nối tới Minecraft Server.
+The bot will start connecting to the Minecraft Server.
 
-## Dừng bot
-Nhấn:
+## Stop the bot
+Press:
 
 `CTRL + C`
 
-## Chạy lại bot
-Chạy:
+## Run the bot again
+Run:
 
 `node index.js`
 
-## Cập nhật bot
-Tải lại file `index.js` mới nhất:
+## Update the bot
+Download the latest `index.js`:
 
 `curl -L https://raw.githubusercontent.com/Moon50112344/Bot-Mineflayer-Minecraft/refs/heads/main/index.js -o index.js`
 
-Sau đó:
+Then:
 
 `npm install`
 
-Rồi chạy:
+After that:
 
 `node index.js`
 
-## Setup nhanh
-Nếu Node.js đã được cài:
+## Quick Setup
+If Node.js is already installed:
 
 `mkdir minecraft-bot`
 
@@ -124,61 +126,63 @@ Nếu Node.js đã được cài:
 
 `node index.js`
 
-## Lỗi thường gặp
+## Common Errors
 
 ### node: command not found
-Chạy:
+Run:
 
 `pkg install nodejs`
 
 ### npm: command not found
-Chạy:
+Run:
 
 `pkg install nodejs`
 
 ### curl: command not found
-Chạy:
+Run:
 
 `pkg install curl`
 
 ### Cannot find module 'mineflayer'
-Chạy:
+Run:
 
 `npm install mineflayer`
 
 ### Cannot find module 'mineflayer-pathfinder'
-Chạy:
+Run:
 
 `npm install mineflayer-pathfinder`
 
 ### Cannot find module 'vec3'
-Chạy:
+Run:
 
 `npm install vec3`
 
 ### Cannot find module 'minecraft-data'
-Chạy:
+Run:
 
 `npm install minecraft-data`
 
-### Bot không kết nối được
-Kiểm tra:
-- Địa chỉ server
+### Bot cannot connect
+Check:
+- Server address
 - Port
-- Phiên bản Minecraft
-- Tên bot
-- Server có đang online không
-- Kết nối Internet
-## Thư viện
+- Minecraft version
+- Bot username
+- Whether the server is online
+- Internet connection
+
+## Libraries
 - [Mineflayer](https://github.com/PrismarineJS/mineflayer)
 - [Mineflayer Pathfinder](https://github.com/PrismarineJS/mineflayer-pathfinder)
 - [Vec3](https://github.com/PrismarineJS/node-vec3)
 - [Minecraft Data](https://github.com/PrismarineJS/minecraft-data)
 
-## Nguồn
+## Source
 - [GitHub Repository](https://github.com/Moon50112344/Bot-Mineflayer-Minecraft)
 - [index.js](https://raw.githubusercontent.com/Moon50112344/Bot-Mineflayer-Minecraft/refs/heads/main/index.js)
- <table align="center">
+
+<table align="center">
   <tr>
     <td>
       <a href="https://www.tiktok.com/@moon501_vn">
